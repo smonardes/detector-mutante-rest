@@ -62,17 +62,10 @@ public class Util {
      */
     public static boolean validarHorizontal(String[] dna) {
         for (String s : dna) {
-            int count = 0;
-            String letra = Constantes.EMPTY;
-            for (char x : s.toCharArray()) {
-                if (!letra.isEmpty() && letra.equalsIgnoreCase(String.valueOf(x))) {
-                    letra = String.valueOf(x);
-                    count++;
-                } else {
-                    letra = String.valueOf(x);
-                    count = 0;
-                }
+            if (Util.validarCadenaDna(s)) {
+                return true;
             }
+
         }
         return false;
     }
