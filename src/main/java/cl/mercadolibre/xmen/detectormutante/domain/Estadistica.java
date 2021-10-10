@@ -7,7 +7,7 @@ public class Estadistica implements Serializable {
     private static final long serialVersionUID = 760465604812231508L;
     private int countMutantDna;
     private int countHumanDna;
-    private float ratio;
+    private double ratio;
 
     public Estadistica() {
         super();
@@ -29,11 +29,11 @@ public class Estadistica implements Serializable {
         this.countHumanDna = countHumanDna;
     }
 
-    public float getRatio() {
+    public double getRatio() {
         return ratio;
     }
 
-    public void setRatio(float ratio) {
+    public void setRatio(double ratio) {
         this.ratio = ratio;
     }
 }

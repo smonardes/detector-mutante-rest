@@ -54,7 +54,7 @@ public class MutanteServiceImpl implements MutanteService{
         Estadistica estadistica = new Estadistica();
         estadistica.setCountMutantDna(mutantes);
         estadistica.setCountHumanDna(humanos);
-        estadistica.setRatio(humanos != 0 ? mutantes/humanos : 0);
+        estadistica.setRatio(humanos != 0 ? (double)mutantes / (double)humanos : 0);
         return estadistica;
     }
 
