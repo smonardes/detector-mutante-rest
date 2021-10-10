@@ -1,9 +1,7 @@
 package cl.mercadolibre.xmen.detectormutante.util;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
 
 public class Util {
 
