@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "4b771799-d141-4bb5-8911-857c6d982a23",
+		"name": "Proyecto Detector Mutante",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/mutant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dna\": [\n        \"ATGCGA\",\n        \"CAGTAC\",\n        \"TTGTGT\",\n        \"AGAAGG\",\n        \"CACCTA\",\n        \"TTACTA\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-144-108-51.us-east-2.compute.amazonaws.com:8080/detector-mutante-rest/mutant",
+					"protocol": "http",
+					"host": [
+						"ec2-3-144-108-51",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"detector-mutante-rest",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/stats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-3-144-108-51.us-east-2.compute.amazonaws.com:8080/detector-mutante-rest/stats",
+					"protocol": "http",
+					"host": [
+						"ec2-3-144-108-51",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"detector-mutante-rest",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
